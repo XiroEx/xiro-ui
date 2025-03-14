@@ -1,0 +1,126 @@
+{
+    "chats": [
+        {
+            "id": 1,
+            "name": "General",
+            "messages": [
+                {
+                    "user": "Alice",
+                    "message": "Hello everyone!",
+                    "timestamp": "2023-10-01T10:00:00Z"
+                },
+                {
+                    "user": "Bob",
+                    "message": "Hi Alice!",
+                    "timestamp": "2023-10-01T10:05:00Z"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Random",
+            "messages": [
+                {
+                    "user": "me",
+                    "message": "Did you see the game last night?",
+                    "timestamp": "2023-10-01T11:00:00Z"
+                },
+                {
+                    "user": "Dave",
+                    "message": "Yeah, it was amazing!",
+                    "timestamp": "2023-10-01T11:10:00Z"
+                },
+                {
+                    "user": "Eve",
+                    "message": "I missed it, what happened?",
+                    "timestamp": "2023-10-01T11:15:00Z"
+                },
+                {
+                    "user": "Frank",
+                    "message": "The final score was 3-2!",
+                    "timestamp": "2023-10-01T11:20:00Z"
+                },
+                {
+                    "user": "Grace",
+                    "message": "Who scored the winning goal?",
+                    "timestamp": "2023-10-01T11:25:00Z"
+                },
+                {
+                    "user": "Heidi",
+                    "message": "It was a fantastic header by John!",
+                    "timestamp": "2023-10-01T11:30:00Z"
+                },
+                {
+                    "user": "Ivan",
+                    "message": "I can't believe I missed it!",
+                    "timestamp": "2023-10-01T11:35:00Z"
+                },
+                {
+                    "user": "Judy",
+                    "message": "Don't worry, there's a replay tonight.",
+                    "timestamp": "2023-10-01T11:40:00Z"
+                },
+                {
+                    "user": "Mallory",
+                    "message": "Let's watch it together!",
+                    "timestamp": "2023-10-01T11:45:00Z"
+                },
+                {
+                    "user": "Niaj",
+                    "message": "Count me in!",
+                    "timestamp": "2023-10-01T11:50:00Z"
+                },
+                {
+                    "user": "Oscar",
+                    "message": "What time is the replay?",
+                    "timestamp": "2023-10-01T11:55:00Z"
+                },
+                {
+                    "user": "Peggy",
+                    "message": "It's at 8 PM.",
+                    "timestamp": "2023-10-01T12:00:00Z"
+                },
+                {
+                    "user": "Quentin",
+                    "message": "Perfect, see you all then!",
+                    "timestamp": "2023-10-01T12:05:00Z"
+                },
+                {
+                    "user": "Rupert",
+                    "message": "I'll bring snacks.",
+                    "timestamp": "2023-10-01T12:10:00Z"
+                },
+                {
+                    "user": "Sybil",
+                    "message": "I'll bring drinks.",
+                    "timestamp": "2023-10-01T12:15:00Z"
+                },
+                {
+                    "user": "Trent",
+                    "message": "I'll bring the remote!",
+                    "timestamp": "2023-10-01T12:20:00Z"
+                },
+                {
+                    "user": "Uma",
+                    "message": "Can't wait!",
+                    "timestamp": "2023-10-01T12:25:00Z"
+                },
+                {
+                    "user": "Victor",
+                    "message": "This is going to be fun!",
+                    "timestamp": "2023-10-01T12:30:00Z"
+                },
+                {
+                    "user": "Walter",
+                    "message": "See you all tonight!",
+                    "timestamp": "2023-10-01T12:35:00Z"
+                },
+                {
+                    "user": "Xena",
+                    "message": "Don't be late!",
+                    "timestamp": "2023-10-01T12:40:00Z"
+                }
+            ]
+        }
+    ]
+}

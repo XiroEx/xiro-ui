@@ -1,0 +1,29 @@
+html {
+  --primary-color: purple;
+  --secondary-color: #333;
+  touch-action: none;
+  overscroll-behavior: none;
+  overflow: hidden;
+  height: 100%;
+  user-select: none;
+}
+
+body {
+  overscroll-behaviour: none;
+  overflow: hidden;
+  height: 100%;
+  user-select: none;
+}
+
+* {
+  scrollbar-width: thin;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+}
