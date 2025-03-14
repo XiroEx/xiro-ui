@@ -1,6 +1,7 @@
 html {
   --primary-color: purple;
   --secondary-color: #333;
+  --text-color: red;
   touch-action: none;
   overscroll-behavior: none;
   overflow: hidden;

@@ -10,9 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "layout": "file:../../module/layout-0.0.1.tgz",
+    "layout": "file:../../module/xiro-ui-0.0.1.tgz",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "xiro-ui": "file:../../module/xiro-ui-0.0.1.tgz"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",

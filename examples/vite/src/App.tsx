@@ -1,16 +1,30 @@
-import { Backdrop, Button, Main, Nav, Sidebar, Modal, useIsPWA } from 'layout'
+import { Backdrop, Button, Main, Nav, Sidebar, Modal, useIsPWA, Input, LoadingWheel, Toast } from 'xiro-ui'
 import { useEffect, useState } from 'react'
 import './App.css'
 import chats from './samples/chats.json'
+
 
 function App() {
 
   const [show, setShow] = useState(false)
   const [isVisible, setIsVisible] = useState(true)
+  const [text, setText] = useState('')
+  const [toast, setToast] = useState('')
   const isApp = useIsPWA()
 
   const chatArray = JSON.parse(JSON.stringify(chats.chats[1].messages)).reverse()
   console.log(chatArray[0])
+
+  const changeText = (e: any) => {
+    setText(e.target.value)
+  }
+
+  const showToast = () => {
+    setToast(text)
+    setTimeout(() => {
+      setToast('')
+    }, 2000)
+  }
 
 
   return (
@@ -77,12 +91,15 @@ function App() {
       </Nav>
 
 
-      <Modal show={isVisible} onClose={() => setIsVisible(!isVisible)} 
+      <Modal show={isVisible} onClose={() => {setIsVisible(!isVisible); setText('')}} 
         styles={{width: '300px', height: '300px', backgroundColor: 'lightblue'}}>
-        <Button onClick={() => alert('Button clicked')}>
+          <Input onChange={changeText} value={text}></Input>
+        <Button onClick={showToast}>
           Click Me
         </Button>
       </Modal>
+
+      <Toast isVisible={ toast !== ''} message={toast} anchor="bottom" styles={{backgroundColor: 'lightblue'}} />
 
     </>
   )

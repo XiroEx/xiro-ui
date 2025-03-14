@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default function Button({ children, onClick, styles }: {
     children: React.ReactNode,
     onClick?: () => void,
