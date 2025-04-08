@@ -1,13 +1,21 @@
-import React, { use, useEffect } from 'react';
+import React, { use, useEffect, useState } from 'react';
 
-export default function Toast({ message, show, anchor = 'top', ms = 200, onClick, styles}: {
+export default function Toast({ message, anchor = 'top', onClick, styles}: {
     message: string,
-    show: boolean,
     anchor?: 'top' | 'bottom',
-    ms?: number,
     onClick?: () => void,
     styles?: React.CSSProperties,
 }): React.ReactElement {
+
+    const [show, setShow] = useState(message !== '');
+
+    useEffect(() => {
+        if (message !== '') {
+            setShow(true);
+            const timer = setTimeout(() => setShow(false), 2000);
+            return () => clearTimeout(timer);
+        }
+    }, [message]);
 
     const toastStyles: React.CSSProperties = {
         position: 'fixed',
@@ -22,7 +30,7 @@ export default function Toast({ message, show, anchor = 'top', ms = 200, onClick
         backgroundColor: 'var(--primary-color)',
         color: 'var(--text-color)',
         borderRadius: '0.25rem',
-        animation: `slide${show ? 'In' : 'Out'}${anchor} ${ms}ms forwards`, // Slide in or out
+        animation: `slide${show ? 'In' : 'Out'}${anchor} 200ms forwards`, // Slide in or out
         zIndex: 1004,
         ...styles,
     };

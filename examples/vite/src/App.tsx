@@ -20,10 +20,8 @@ function App() {
   }
 
   const showToast = () => {
-    setToast(text)
-    setTimeout(() => {
-      setToast('')
-    }, 2000)
+    if (text == toast) setToast('')
+      setTimeout(() => setToast(text), 0)
   }
 
 
@@ -99,7 +97,7 @@ function App() {
         </Button>
       </Modal>
 
-      <Toast isVisible={ toast !== ''} message={toast} anchor="bottom" styles={{backgroundColor: 'lightblue'}} />
+      <Toast message={toast} anchor="bottom" styles={{backgroundColor: 'lightblue'}} />
 
     </>
   )
